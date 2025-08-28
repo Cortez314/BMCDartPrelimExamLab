@@ -1,0 +1,30 @@
+import dart:io;
+
+void main() {
+  print('===Student Grade Evaliator');
+  
+  
+  print("Enter assignmentWeight (0-100):");
+  double assignmentWeight = double.parse(stdin.readLineSync()!);
+  
+  print("Enter midtermWeight score (0-100):");
+  double midtermWeight = double.parse(stdin.readLineSync()!);
+  
+  
+  print("Enter finalWeight score (0-100):");
+  double finalWeight = double.parse(stdin.readLineSync()!);
+  
+  double finalGrade = (assignmentWeight * 0.2) + (midtermWeight * 0.3) + (finalWeight * 0.5);
+  
+  print("\n=== Results ===");
+  print("Assignment: ${assignmentWeight.toStringAsFixed(1)}%");
+  print("Midterm: ${midtermWeight.toStringAsFixed(1)}%");
+  print("Final Exam: ${finalWeight.toStringAsFixed(1)}%");
+  print("Final Grade: ${finalGrade.toStringAsFixed(1)}%");
+  
+    
+  
+  
+  
+    
+}
